@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'SF_HailSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff') ;
+
+body {
+    margin: 10;
+    font-family: 'SF_HailSnow';
+}
+
+.background{
+background-color: #04B486;
+background-size: cover;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+
+ol {
+    border-right: 1px solid gray;
+    width: 110px;
+    margin: 0;
+    padding: 30px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+    padding-left: 33px;
+}
+
+#grid #article {
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+img{
+    max-width: 80%;
+  height: auto;
+  
+}
+
+@media(max-width:300px) {
+    #grid {
+        display: block;
+    }
+
+    ol {
+        border-right:none;
+    }
+    h1{
+        border-bottom:none;
+    }
+}
